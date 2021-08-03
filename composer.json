@@ -1,0 +1,33 @@
+{
+    "name": "squirreldev/twigextensions",
+    "description": "Adds a Twig filter to match matrix fields handles with templates names",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "twig extensions"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Squirrel Dev"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "twig/extensions": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "squirreldev\\twigextensions\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Twig Lego",
+        "handle": "twigextensions",
+        "class": "squirreldev\\twigextensions\\TwigExtensionsModule"
+    }
+}
