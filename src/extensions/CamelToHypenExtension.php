@@ -1,9 +1,9 @@
 <?php
 
-namespace squirreldev\twigextensions\extensions;
+namespace squirreldev\twigmatrixmatch\extensions;
 
 use Twig\Extension\AbstractExtension;
-use squirreldev\twigextensions\traits\TwigExtensionTrait;
+use squirreldev\twigmatrixmatch\traits\TwigExtensionTrait;
 
 class CamelToHypenExtension extends AbstractExtension {
 
@@ -13,7 +13,7 @@ class CamelToHypenExtension extends AbstractExtension {
      * @return string
      */
     public function getName() {
-        return Craft::t('twigextensions', 'String Extension');
+        return Craft::t('twigmatrixmatch', 'String Extension');
     }
 
     public function getFilters() {

@@ -1,6 +1,6 @@
 <?php
 
-namespace squirreldev\twigextensions\traits;
+namespace squirreldev\twigmatrixmatch\traits;
 
 trait TwigExtensionTrait {
 

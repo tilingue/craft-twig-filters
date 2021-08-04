@@ -6,13 +6,13 @@
  *
  */
 
-namespace squirreldev\twigextensions;
+namespace squirreldev\twigmatrixmatch;
 
 use Craft;
 use craft\base\Plugin;
-use squirreldev\twigextensions\extensions\CamelToHypenExtension;
+use squirreldev\twigmatrixmatch\extensions\CamelToHypenExtension;
 
-class TwigExtensionsModule extends Plugin {
+class TwigMatrixMatchModule extends Plugin {
 
 	public function init() {
 		parent::init();

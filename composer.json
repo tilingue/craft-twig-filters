@@ -1,5 +1,5 @@
 {
-    "name": "squirreldev/twigextensions",
+    "name": "squirreldev/twig-matrix-match",
     "description": "Adds a Twig filter to match matrix fields handles with templates names",
     "type": "craft-plugin",
     "version": "1.0.0",
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "squirreldev\\twigextensions\\": "src/"
+            "squirreldev\\twigmatrixmatch\\": "src/"
         }
     },
     "extra": {
-        "name": "Twig Lego",
-        "handle": "twigextensions",
-        "class": "squirreldev\\twigextensions\\TwigExtensionsModule"
+        "name": "Twig Matrix Match",
+        "handle": "twig-matrix-match",
+        "class": "squirreldev\\twigmatrixmatch\\TwigMatrixMatchModule"
     }
 }
