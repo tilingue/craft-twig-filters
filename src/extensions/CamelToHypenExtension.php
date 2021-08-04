@@ -3,34 +3,21 @@
 namespace squirreldev\twigmatrixmatch\extensions;
 
 use Twig\Extension\AbstractExtension;
-use squirreldev\twigmatrixmatch\traits\TwigExtensionTrait;
+use yii\helpers\Inflector;
 
 class CamelToHypenExtension extends AbstractExtension {
-
-    use TwigExtensionTrait;
 
     /**
      * @return string
      */
     public function getName() {
-        return Craft::t('twigmatrixmatch', 'String Extension');
+        return Craft::t('twigmatrixmatch', 'Camel to hypen');
     }
 
     public function getFilters() {
         return [
-            $this->addFilter('camelToHypens'),
+            new \Twig_SimpleFilter('camelToHypens', [Inflector::class, 'camel2id'])
         ];
-    }
-
-    public function camelToHypens($string) {
-        $pattern = '/(([A-Z]{1}))/';
-        return preg_replace_callback(
-            $pattern,
-            function ($matches) {
-                return "-" . strtolower($matches[0]);
-            },
-            $string
-        );
     }
 
 }
